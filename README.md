@@ -5,20 +5,20 @@ Welcome to the source code for my personal portfolio! This is a modern, responsi
 ## 🌟 Live Demo
 [Check out the live portfolio here!](https://manolina-13.github.io/myportfolio/)
 
-## ✨ Key Features
+##  Key Features
 - **Modern UI/UX**: Built with a sleek, premium dark mode glassmorphism theme.
 - **Scroll Animations**: Dynamic reveal animations powered by vanilla JavaScript.
 - **Responsive Layout**: Designed mobile-first to look perfect across all devices.
 - **Project Showcase**: Cleanly styled directories linking directly to my pinned GitHub repositories.
 - **Lightweight Architecture**: No complex installations needed! Just standard web browser technologies.
 
-## 🛠️ Technology Stack
+##  Technology Stack
 - **Structure**: HTML5
 - **Styling**: Vanilla CSS (Custom tokens, Flexbox/Grid, CSS Variables)
 - **Logic**: Vanilla JavaScript
 - **Deployment**: GitHub Pages
 
-## 🚀 Local Development
+##  Local Development
 Because this project is exceptionally lightweight and uses zero frameworks, getting it running locally takes one second. No `npm install` needed!
 
 1. Clone this repository to your machine:
