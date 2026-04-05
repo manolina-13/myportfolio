@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Manolina - CSE Student, Machine Learning & Computer Vision Enthusiast. Portfolio showcasing projects and skills.">
+    <title>Manolina | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <h1 class="logo">Manolina<span class="dot">.</span></h1>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">Hi, I'm Manolina <span class="wave">👋</span></h1>
+            <p class="hero-subtitle">
+                Final Year CSE Student | <span class="highlight">Machine Learning & Computer Vision</span> Enthusiast.
+                <br> Building intelligent systems for real-world problems.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in touch</a>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">About Me</h2>
+            <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap-reverse;">
+                <div class="about-card glass" style="flex: 1; min-width: 300px; max-width: 100%;">
+                    <p>
+                        I am a final-year Computer Science student at the University of Kalyani.
+                        My core interests revolve around <strong>Machine Learning</strong>, <strong>Computer
+                            Vision</strong>, and building assistive technologies that make a real difference.
+                    </p>
+                    <p>
+                        I am currently working on a highly impactful <em>gesture-to-speech system</em> aimed at helping
+                        people with severe speech impairments communicate effortlessly. I thrive on translating academic
+                        research into practical, scalable code.
+                    </p>
+                </div>
+                <div style="flex-shrink: 0; display: flex; justify-content: center; min-width: 250px;">
+                    <div style="position: relative; width: 280px; height: 280px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2); border: 2px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s;"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="myphoto_new.jpeg" alt="Manolina Das"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 70%, rgba(10, 10, 15, 0.8) 100%);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container reveal">
+            <h2 class="section-title text-center">Education</h2>
+            <div class="project-grid">
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <h3 class="project-title">B.Tech in Computer Science & Engineering</h3>
+                        <p class="project-desc"
+                            style="margin-bottom: 0.5rem; color: var(--accent-color); font-weight: 500;">University of
+                            Kalyani</p>
+                        <p class="project-desc" style="font-size: 0.85rem; opacity: 0.8;">Nov 2022 – Jul 2026 (Expected)
+                            <br> CGPA: 9.52 | Currently in 8th Semester
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <h3 class="project-title">Higher Secondary Education (WBCHSE)</h3>
+                        <p class="project-desc"
+                            style="margin-bottom: 0.5rem; color: var(--accent-color); font-weight: 500;">Kalinarayanpur
+                            Adarsha Vidyalaya</p>
+                        <p class="project-desc" style="font-size: 0.85rem; opacity: 0.8;">Batch of 2021-22 <br> Marks:
+                            94.2% (471/500)</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <h3 class="project-title">Secondary Education (WBBSE)</h3>
+                        <p class="project-desc"
+                            style="margin-bottom: 0.5rem; color: var(--accent-color); font-weight: 500;">Kalinarayanpur
+                            Adarsha Vidyalaya</p>
+                        <p class="project-desc" style="font-size: 0.85rem; opacity: 0.8;">Marks: 95.4% (668/700)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section alt-bg">
+        <div class="container reveal">
+            <h2 class="section-title text-center">Experience & Internships</h2>
+            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;">
+
+                <div class="glass"
+                    style="padding: 2.5rem; border-radius: 16px; transition: transform 0.3s; cursor: default;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">AICTE-IBM SkillsBuild Internship</h3>
+                    <div
+                        style="color: var(--accent-color); font-weight: 500; margin-bottom: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap;">
+                        <span>Edunet Foundation</span>
+                        <span style="color: var(--text-secondary); font-size: 0.9rem;">Sep 2025 - Oct 2025</span>
+                    </div>
+                    <p style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 1rem;">
+                        <strong>Project:</strong> LearnEd — AI-Powered Study Buddy</p>
+                    <ul
+                        style="font-size: 0.95rem; color: var(--text-secondary); margin-left: 1.5rem; line-height: 1.6; list-style-type: disc;">
+                        <li style="margin-bottom: 0.5rem;">Built LearnEd, an AI study assistant using Streamlit and
+                            Google Gemini API for content summarization, explanations, quizzes, and flashcards.</li>
+                        <li>Implemented personalized learning workflows with interactive UI and text-to-speech using
+                            gTTS.</li>
+                    </ul>
+                </div>
+
+                <div class="glass"
+                    style="padding: 2.5rem; border-radius: 16px; transition: transform 0.3s; cursor: default;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">IDEAS-TIH Autumn Internship on Data Science
+                    </h3>
+                    <div
+                        style="color: var(--accent-color); font-weight: 500; margin-bottom: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap;">
+                        <span>ISI Kolkata</span>
+                        <span style="color: var(--text-secondary); font-size: 0.9rem;">Aug 2025 - Sep 2025</span>
+                    </div>
+                    <p style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 1rem;">
+                        <strong>Project:</strong> Unsupervised Learning: Clustering with PCA</p>
+                    <ul
+                        style="font-size: 0.95rem; color: var(--text-secondary); margin-left: 1.5rem; line-height: 1.6; list-style-type: disc;">
+                        <li style="margin-bottom: 0.5rem;">Developed an unsupervised learning pipeline (MNIST/Wine)
+                            using PCA for dimensionality reduction and K-Means for clustering.</li>
+                        <li>Performed exploratory analysis, visualized insights, and assessed clustering efficiency with
+                            Silhouette Score.</li>
+                    </ul>
+                </div>
+
+                <div class="glass"
+                    style="padding: 2.5rem; border-radius: 16px; transition: transform 0.3s; cursor: default;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">IEEE CIS Kolkata Chapter Internship</h3>
+                    <div
+                        style="color: var(--accent-color); font-weight: 500; margin-bottom: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap;">
+                        <span>IEEE CIS Kolkata Chapter</span>
+                        <span style="color: var(--text-secondary); font-size: 0.9rem;">Jun 2025 - Jul 2025</span>
+                    </div>
+                    <p style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 1rem;">
+                        <strong>Project:</strong> Autonomous Cognitive Car System Development</p>
+                    <ul
+                        style="font-size: 0.95rem; color: var(--text-secondary); margin-left: 1.5rem; line-height: 1.6; list-style-type: disc;">
+                        <li style="margin-bottom: 0.5rem;">Developed an autonomous ESP32-based vehicle, integrating
+                            lightweight YOLO for real-time perception and a custom routing algorithm.</li>
+                        <li>Led team coordination, managed milestones, and served as primary liaison with the faculty
+                            guide.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container reveal">
+            <h2 class="section-title text-center">Featured Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Gesture-to-Speech System</h3>
+                        <p class="project-desc">
+                            A robust Machine Learning system utilizing MediaPipe and KNN to continuously translate
+                            complex hand gestures into audible speech.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>MediaPipe</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title"><a href="https://github.com/manolina-13/Bank_Management_system"
+                                target="_blank" style="color: inherit; text-decoration: none;">Bank Management
+                                System</a></h3>
+                        <p class="project-desc">
+                            A secure, enterprise-level Java Servlet-based banking platform featuring user
+                            authentication, transactional integrity, and database integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java Servlets</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon"><svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" />
+                            </svg></div>
+                        <h3 class="project-title"><a href="https://github.com/manolina-13/Auto-Drive-ESP32_IEEE"
+                                target="_blank" style="color: inherit; text-decoration: none;">Auto-Drive-ESP32
+                                (IEEE)</a></h3>
+                        <p class="project-desc">A fully autonomous vehicle project using ESP32 developed during my IEEE
+                            Summer Internship. Features dynamic navigation and routing.</p>
+                        <div class="project-tech"><span>C++</span> <span>ESP32</span> <span>IoT</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon"><svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c-.96 1.66-2.49 2.93-4.33 3.56C.78 4.45 1.24 5.65 1.56 6.9zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.34.16-2h4.68c.09.66.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" />
+                            </svg></div>
+                        <h3 class="project-title"><a href="https://github.com/manolina-13/Navy_Fleet_Management"
+                                target="_blank" style="color: inherit; text-decoration: none;">Navy Fleet Management</a>
+                        </h3>
+                        <p class="project-desc">A relational database system managing sailors, ships, missions, and
+                            training programs, modeling complex maritime relationships effectively.</p>
+                        <div class="project-tech"><span>SQL</span> <span>Database Systems</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon"><svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+                            </svg></div>
+                        <h3 class="project-title"><a
+                                href="https://github.com/manolina-13/RSA-Socket-Encryption-from-Scratch" target="_blank"
+                                style="color: inherit; text-decoration: none;">RSA Socket Encryption</a></h3>
+                        <p class="project-desc">A Python client-server application featuring a from-scratch RSA
+                            encryption engine for secure communication.</p>
+                        <div class="project-tech"><span>Python</span> <span>Cryptography</span> <span>Sockets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon"><svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z" />
+                            </svg></div>
+                        <h3 class="project-title"><a href="https://github.com/manolina-13/HammingNet-Chat"
+                                target="_blank" style="color: inherit; text-decoration: none;">HammingNet-Chat</a></h3>
+                        <p class="project-desc">Multithreaded TCP chat server implementing a custom Hamming Code (FEC)
+                            algorithm, complete with simulated noise injection.</p>
+                        <div class="project-tech"><span>Python</span> <span>Networks</span> <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="card-content">
+                        <div class="project-icon"><svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm5.79 14.8c-.83 0-1.5-.67-1.5-1.5H16.5c0 1.25 1.01 2.22 2.19 2.22 1.26 0 2.21-1.04 2.21-2.28 0-1.85-2.61-1.63-2.61-2.82 0-.5.45-.88 1.05-.88.66 0 1.15.42 1.15 1.04H22c0-1.12-.86-1.95-1.95-1.95-1.28 0-2.23.97-2.23 2.19 0 1.95 2.61 1.68 2.61 2.87 0 .58-.49 1.11-1.26 1.11H17.78zm-6.19-.1L9.61 14.3v2.4H8.4V10.7h1.21v2.36L11.5 10.7h1.45l-2.45 2.88 2.57 3.12h-1.48zm-4.73 0H5.5V10.7h1.37v6z" />
+                            </svg></div>
+                        <h3 class="project-title"><a
+                                href="https://github.com/manolina-13/multilingual-sentiment-analyzer" target="_blank"
+                                style="color: inherit; text-decoration: none;">Multilingual Analyzer</a></h3>
+                        <p class="project-desc">AI text sentiment analyzer built on XLM-R with integrated explainable AI
+                            (SHAP) across English, Hindi, and Bengali.</p>
+                        <div class="project-tech"><span>Python</span> <span>AI/ML</span> <span>XLM-R</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-wrapper">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+        <div class="container reveal text-center">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-desc">Currently open for opportunities and exciting collaborations.</p>
+            <div class="contact-info">
+                <a href="mailto:manolinadas2004@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    manolinadas2004@gmail.com
+                </a>
+                <a href="https://github.com/manolina-13" target="_blank" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/manolina-das-06a398264" target="_blank" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Manolina. Designed with passion.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
