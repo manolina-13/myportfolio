@@ -382,50 +382,57 @@ a {
 /* =========================================
    SKILLS SECTION
    ========================================= */
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.skills-glass-container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0.5rem;
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
 }
 
 .skills-row {
-  display: flex;
-  align-items: center;
-  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  padding: 2.5rem;
   gap: 2rem;
+  border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
+  align-items: flex-start;
+}
+
+.skills-row:last-child {
+  border-bottom: none;
 }
 
 .skills-row:hover {
-  border-color: rgba(56, 189, 248, 0.3);
+  background: rgba(255, 255, 255, 0.02);
   transform: translateX(10px);
-  background: rgba(255, 255, 255, 0.05);
 }
 
 .skills-category {
-  flex: 0 0 200px;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--accent-color);
   font-family: var(--font-heading);
+  line-height: normal;
+  padding-top: 0.4rem;
 }
 
 .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  flex: 1;
-  justify-content: flex-start;
 }
 
 .skill-tag {
-  padding: 0.8rem 1.5rem;
-  background: transparent;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-color);
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   transition: var(--transition);
   cursor: default;
