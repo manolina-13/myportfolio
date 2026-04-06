@@ -527,6 +527,15 @@ a {
   .about-card { padding: 2rem; }
   .contact-info { flex-direction: column; gap: 1.5rem; align-items: center; }
   
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-content {
+    justify-content: center;
+    padding: 1.2rem 1rem;
+  }
+  
   .skills-row {
     grid-template-columns: 1fr;
     gap: 1rem;
