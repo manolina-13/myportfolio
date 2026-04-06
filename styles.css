@@ -382,24 +382,31 @@ a {
 .skills-container {
   display: flex !important;
   flex-direction: column !important;
-  gap: 2rem;
   width: 100% !important;
-  max-width: none !important;
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .skill-row {
   display: flex !important;
-  flex-direction: row !important;
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
-  padding: 2.5rem !important;
-  width: 100% !important;
+  padding: 1.8rem 2.5rem !important;
+  border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
+  width: 100% !important;
+}
+
+.skill-row:last-child {
+  border-bottom: none;
 }
 
 .skill-row:hover {
-  border-color: rgba(56, 189, 248, 0.4);
-  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .skill-category-title {
@@ -407,27 +414,27 @@ a {
   max-width: 200px;
   color: var(--accent-color);
   font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 0.5rem;
+  letter-spacing: 1.5px;
+  margin: 0 !important;
 }
 
 .skills-wrapper {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 1rem;
+  gap: 0.8rem;
   flex: 1 !important;
   justify-content: flex-start !important;
 }
 
 .skill-tag {
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1.2rem !important;
   background: transparent;
   border: 1px solid var(--border-color);
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 0.9rem !important;
   font-weight: 500;
   transition: var(--transition);
   cursor: default;
