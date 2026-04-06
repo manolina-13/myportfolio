@@ -426,7 +426,7 @@ a {
 
 .skill-tag {
   padding: 0.6rem 1.2rem;
-  background: transparent;
+  background: transparent !important;
   border: 1px solid var(--border-color);
   border-radius: 30px;
   font-size: 0.95rem;
@@ -545,6 +545,7 @@ a {
   .skill-tag {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
+    background: transparent !important;
   }
 
   .skills-row:hover {
