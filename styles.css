@@ -326,21 +326,27 @@ a {
   z-index: 2;
 }
 
-.project-icon {
-  width: 48px;
-  height: 48px;
-  background: rgba(56, 189, 248, 0.1);
-  border-radius: 12px;
-  display: flex;
+.project-link {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
   color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
+  padding: 0.2rem 0;
+  border-bottom: 1px solid transparent;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
+.project-link:hover {
+  gap: 0.8rem;
+  border-bottom-color: var(--accent-color);
+}
+
+.link-icon {
+  width: 18px;
+  height: 18px;
 }
 
 .project-title {
@@ -387,7 +393,7 @@ a {
 
 .skill-tag {
   padding: 0.8rem 1.5rem;
-  background:;
+  background: transparent;
   border: 1px solid var(--border-color);
   border-radius: 30px;
   font-size: 1rem;
