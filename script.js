@@ -9,6 +9,24 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+}
+
+// Close menu when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
+
 // Scroll Reveal Animations
 const revealElements = document.querySelectorAll('.reveal');
 

@@ -138,6 +138,21 @@ a {
   color: var(--accent-color);
 }
 
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+
+.menu-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -527,13 +542,36 @@ a {
   .about-card { padding: 2rem; }
   .contact-info { flex-direction: column; gap: 1.5rem; align-items: center; }
   
-  .nav-links {
-    display: none;
-  }
+  .menu-btn { display: block; }
   
   .nav-content {
-    justify-content: center;
-    padding: 1.2rem 1rem;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 15, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+  }
+  
+  .nav-links.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
   
   .skills-row {
