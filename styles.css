@@ -403,7 +403,7 @@ a {
 }
 
 .skills-row:hover {
-  background: rgba(56, 189, 248, 0.03);
+  background: rgba(255, 255, 255, 0.02);
   border-left: 4px solid var(--accent-color);
   padding-left: calc(2.5rem - 4px);
 }
@@ -439,7 +439,7 @@ a {
 .skill-tag:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
-  background: rgba(56, 189, 248, 0.05);
+  background: transparent !important;
   transform: translateY(-3px);
 }
 
@@ -549,7 +549,7 @@ a {
   }
 
   .skills-row:hover {
-    background: rgba(56, 189, 248, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     border-left: 4px solid var(--accent-color);
   }
 }
