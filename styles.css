@@ -379,16 +379,43 @@ a {
   font-family: var(--font-heading);
 }
 
-/* =========================================
-   SKILLS SECTION
-   ========================================= */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.skill-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.skill-row:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateX(10px);
+}
+
+.skill-category-title {
+  min-width: 220px;
+  color: var(--accent-color);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+}
+
 .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  justify-content: center;
+  gap: 0.8rem;
+  flex: 1;
+  justify-content: flex-start;
 }
 
 .skill-tag {
