@@ -411,7 +411,7 @@ a {
 .skills-category {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--accent-color); /* Restoring blue color */
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-top: 0.5rem;
@@ -545,5 +545,10 @@ a {
   .skill-tag {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
+  }
+
+  .skills-row:hover {
+    background: rgba(56, 189, 248, 0.05);
+    border-left: 4px solid var(--accent-color);
   }
 }
