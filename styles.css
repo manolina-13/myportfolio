@@ -426,12 +426,12 @@ a {
 
 .skill-tag {
   padding: 0.6rem 1.2rem;
-  background: rgba(56, 189, 248, 0.08); /* Blue tint by default */
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  background: transparent;
+  border: 1px solid var(--border-color);
   border-radius: 30px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--accent-color); /* Blue text by default */
+  color: var(--text-primary);
   transition: var(--transition);
   cursor: default;
 }
