@@ -403,7 +403,9 @@ a {
 }
 
 .skills-row:hover {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(56, 189, 248, 0.03);
+  border-left: 4px solid var(--accent-color);
+  padding-left: calc(2.5rem - 4px);
 }
 
 .skills-category {
@@ -423,12 +425,13 @@ a {
 }
 
 .skill-tag {
-  padding: 0.8rem 1.5rem;
-  background: transparent;
-  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.2rem;
+  background: rgba(56, 189, 248, 0.08); /* Blue tint by default */
+  border: 1px solid rgba(56, 189, 248, 0.2);
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
+  color: var(--accent-color); /* Blue text by default */
   transition: var(--transition);
   cursor: default;
 }
